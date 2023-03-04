@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="brand"><a href="index.html">OAGRO FARM</a></div>
+    <nav>
+     <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="livestock.html">LIVESTOCK</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li id="login"><a href="gallery.html">GALLERY</a></li>
+        
+     </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+       <div class="bar1"></div>
+       <div class="bar2"></div>
+       <div class="bar3"></div>
+       <ul class="mobile-menu">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="livestock.html">LIVESTOCK</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li id="login"><a href="gallery.html">GALLERY</a></li>
+        
+       </ul>
+    </div>
+</header>
+<script src="index.js"></script>
+      <p><b style="font-size: x-large;text-align: center; font-family: Arial, Helvetica, sans-serif; font-weight: bolder;">ABOUT PIG</b>
+        <br><br>
+         Choosing a pig is not just a matter of taste.
+          We want you to be happy
+         with your purchase. <br>
+    We offer the best pork,
+    Our pigs live in spacious pens and eat lush, organic feed.
+    Our pigs have a diet rich in vegetables, which provide high nutrition.
+    The feed they eat is fresh, organic and free of chemicals,
+    they don't get any antibiotics or growth hormones.
+    We have an extensive selection of purebred pigs available,
+    including Hampshire , WERTHAM and alpacas. All our pigs live in a free range environment 
+    with plenty of sunlight and fresh air. <br><br><br>
+    
+    Moreover;
+    If you're looking for a pig who gets along well with others, 
+    is social and playful, but doesn't need much time outside the pen,
+    look no further than our friendly and fun pigs. Their calm temperament makes them
+    great for those who prefer not to have a lot of excitable hogs running around their yards.
+    We offer home delivery on most of our pigs.
+    <br><br><br>
+    <img src="https://i.natgeofe.com/k/0ed36c42-672a-425b-9e62-7cc946b98051/pig-fence_square.jpg" width="250" height="250" >
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://www.globaltimes.cn/Portals/0/attachment/2022/2022-07-27/6b7cf899-f500-4608-8144-efbc9e79a342.jpeg" alt=""  width="250" height="250">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://i.natgeofe.com/k/6d301bfc-ff93-4f6f-9179-b1f66b19b9b3/pig-young-closeup_4x3.jpg" alt="" width="250" height="250"> <br><br>
+    <br><br><br>
+    <img src="https://static01.nyt.com/images/2022/03/15/science/09tb-oink1/merlin_199399965_f18ecfef-4b8d-43ac-8a14-a72136c0cf89-superJumbo.jpg" alt="" width="250" height="250" >
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="https://images.theconversation.com/files/146054/original/image-20161115-31132-zhdeme.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop" alt="" width="250" height="250">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <img src="https://api.groenkennisnet.nl/upload_mm/5/e/a/617804_fullimage_husbandry%20header%20photo.jpg" alt="" width="250" height="250">
+</p>
+    
+</body>
+</html>
+
+<style>
+    ul {
+           width: 80%;
+           margin: auto;
+           padding: 20px;
+           display: flex;
+           align-content: center;
+           justify-content: space-evenly;
+       }
+       ul li {
+       list-style: none;
+       display: inline-block;
+       margin: 0 20px;
+       position: relative;
+     }
+      ul li a {
+      text-decoration:none;
+     color: rgb(246, 243, 243);
+      text-transform: uppercase;
+    }
+   ul li ::after{
+       content:'';
+       height: 3px;
+       width: 0;
+       background: #f3f4f4;
+       position: absolute;
+       left: 0;
+       bottom: -10px;
+       transition: 0.5s;
+       }
+    ul li :hover:after{
+     width: 100%;
+     }
+     p{ color: rgb(250, 246, 246);
+     margin-left: 50px;
+   font-size: large;}
+   b{
+       color: rgb(250, 246, 246);
+     margin-left: 50px;
+   font-size:large;
+   }
+
+     body{
+       background-image:linear-gradient(rgba(15, 14, 14, 0.75),
+       rgba(10, 8, 8, 0.75)), 
+       url(https://api.groenkennisnet.nl/upload_mm/5/e/a/617804_fullimage_husbandry%20header%20photo.jpg);
+       width: 100%;
+           height: 100vh;
+           background-size: cover;
+           background-position: center;
+   }
+   img{
+          float: right;
+          margin-right: 100px;
+          border-radius: 50%;
+       }
+       p{
+         font-size: x-large;
+         margin-top: 200px;
+       }
+       a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .logo{width: 100px;
+cursor: pointer;
+margin-top: 30px;}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+@media screen and (max-width:  500px) {
+    h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    p{
+      font-size: 36px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 600px){
+   /*     add css for tablet screen size     */
+}
+</style>

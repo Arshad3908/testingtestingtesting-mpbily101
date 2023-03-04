@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutOagrofarm</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>  
+
+
+  <header>
+    <div id="brand"><a href="index.html">OAGRO FARM</a></div>
+    <nav>
+     <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="livestock.html">LIVESTOCK</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li id="login"><a href="gallery.html">GALLERY</a></li>
+        
+     </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+       <div class="bar1"></div>
+       <div class="bar2"></div>
+       <div class="bar3"></div>
+       <ul class="mobile-menu">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="livestock.html">LIVESTOCK</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li id="login"><a href="gallery.html">GALLERY</a></li>
+        
+       </ul>
+    </div>
+</header>
+<script src="index.js"></script>
+
+  <p>
+    WHY OAGRO FARMS PRODUCTS?<br><br>
+Many people nowadays are attempting to eat healthly and stay fit,
+If you have a sweet tooth and enjoy the
+taste of fruit juices and rearing of healthy livestock, OAGRO FARM has you covered <br>
+The following are the reasons why you should choose OAGRO FARMS PRODUCT, <br><br>
+We are a trusted and reliable source,
+that is good at their work and provides the best price to their customers,and offer high-quality 
+farming services in the pineapple farming field
+using our own farms and trained team members.
+Our products are fresh, convenient, and simple to process,
+and their quality remains consistent over time because we grow them
+in a controlled environment to ensure freshness and natural flavor. <br><br><br>
+In OAGRO FARM we produce pineapple of high sugar content that contributes to their reputation for having a sweet flavor.So as to decreases hunger,boosts metabolism,and also aid with weight loss.
+It provides numerous health advantages, including enhancing heart health, lowering inflammation, and decreasing the spread of cancer. Pineapples from OAGRO FARM contain antioxidant  content which aid in cancer treatment survival more than chemotherapy or radiation therapy by itself!
+Furthermore, despite the fact that it has been around for centuries, it remains relatively unknown and underutilized.
+Except from that,
+Vitamin C, found in abundance, aids in the body's absorption of iron and other nutrients. Moreover, they have bromelain, an enzyme that aids in digestion, andinflammation.
+High levels of vitamin B6 (commonly referred to as pyridoxine), which helps prevent heart disease, strokes, and Alzheimer's disease. Moreover, they include potassium and fiber, two nutrients that support healthy cholesterol levels in the bloodstream and lower blood pressure.
+We are happy to introduce you to this pineapple enterprise. Finding the ideal product might be challenging, so we want to make sure you get exactly what you require.
+If you'd like to try them out, we can ship them straight out to your door because we currently have some excellent prices on our pineapple items.
+<br><br><br>
+<img src="https://chefgourmetllc.com/wp-content/uploads/2022/07/Pineapple3-scaled-e1657901276202.jpg" width="250" height="250"
+ > &nbsp;
+ <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSqIkogub1Mz3A1BpQaaYRu8h2waLSb-vGuA&usqp=CAU" width="250" height="250">
+&nbsp;
+<img src="http://cdn.shopify.com/s/files/1/0959/2110/files/pineapple_group_shot_large.jpeg?11037418258207831422" alt="" width="250" height="250">
+
+</p>
+
+
+        
+
+</body>
+</html>
+
+<style>
+  .container{
+        width: 100%;
+        height:200vh;
+        background: #222;
+    }
+     ul {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            align-content: center;
+            justify-content: space-evenly;
+        }
+        ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+      }
+       ul li a {
+       text-decoration:none;
+      color: rgb(246, 243, 243);
+       text-transform: uppercase;
+     }
+    ul li ::after{
+        content:'';
+        height: 3px;
+        width: 0;
+        background: #f3f4f4;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+        }
+     ul li :hover:after{
+      width: 100%;
+      }
+      p{ color: rgb(250, 246, 246);
+      margin-left: 30px;
+    font-size: large;
+         margin-top: 200px;
+  }
+    b{
+        color: rgb(250, 246, 246);
+      margin-left: 50px;
+    font-size:large;
+    }
+      body{
+        background-image:linear-gradient(rgba(15, 14, 14, 0.75),
+        rgba(10, 8, 8, 0.75)), 
+        url(http://cdn.shopify.com/s/files/1/0959/2110/files/pineapple_group_shot_large.jpeg?11037418258207831422);
+        width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+    }
+    img{
+           float: right;
+           margin-right:100px;
+           
+           border-radius: 10%;
+        }
+        p{
+          font-size: x-large;
+        }
+        a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .logo{width: 100px;
+cursor: pointer;
+margin-top: 30px;}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+@media screen and (max-width:  500px) {
+    h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    p{
+      font-size: 36px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 600px){
+   /*     add css for tablet screen size     */
+}
+</style>

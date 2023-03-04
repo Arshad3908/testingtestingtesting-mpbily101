@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgOAGRO FARM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="brand"><a href="index.html">OAGRO FARM</a></div>
+        <nav>
+         <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="livestock.html">LIVESTOCK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li id="login"><a href="gallery.html">GALLERY</a></li>
+            
+         </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+           <div class="bar1"></div>
+           <div class="bar2"></div>
+           <div class="bar3"></div>
+           <ul class="mobile-menu">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="livestock.html">LIVESTOCK</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li id="login"><a href="gallery.html">GALLERY</a></li>
+            
+           </ul>
+        </div>
+    </header>
+    <script src="index.js"></script>
+
+    
+     <div class="container">
+
+        <!-- Slider main container -->
+        <div class="swiper">
+           <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+         <div class="swiper-slide"><img src="https://c.files.bbci.co.uk/11A38/production/_126184227_gettyimages-649146787.jpg" ></div>
+         <div class="swiper-slide"><img src="https://cdn.globalagmedia.com/pig/legacy/files/articles/suprisingPigFacts_fact3-image.jpg" ></div>
+         <div class="swiper-slide"><img src="https://www.foodnavigator.com/var/wrbm_gb_food_pharma/storage/images/_aliases/wrbm_large/publications/food-beverage-nutrition/foodmanufacture.co.uk/article/2020/03/16/pig-meat-production-costs-up/10808877-1-eng-GB/Pig-meat-production-costs-up.jpg" ></div>
+         <div class="swiper-slide"><img src="https://images.hindustantimes.com/img/2022/07/26/1600x900/eff25fee-0b7a-11ed-9a7b-b095af601a35_1658685867565_1658823323640_1658823323640.jpg" ></div>
+         <div class="swiper-slide"><img src="https://www.folly-farm.co.uk/wp-content/uploads/2019/07/baby-piglets.jpg" ></div>
+         <div class="swiper-slide"><img src="https://www.worldanimalprotection.us/sites/default/files/styles/webp/public/media/GettyImages-1312118255.jpg" ></div>
+         <div class="swiper-slide"><img src="https://farmingbase.com/wp-content/uploads/2021/06/Black-And-White-Pig-Breeds.jpg" ></div>
+         <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/7/74/%E0%B4%95%E0%B5%88%E0%B4%A4%E0%B4%9A%E0%B5%8D%E0%B4%9A%E0%B4%95%E0%B5%8D%E0%B4%95.jpg" ></div>
+         <div class="swiper-slide"><img src="https://foodrevolution.org/wp-content/uploads/iStock-1384969731.jpg" ></div>
+         <div class="swiper-slide"><img src="https://www.news-medical.net/image.axd?picture=2020%2F9%2Fshutterstock_174354263.jpg" ></div>
+         <div class="swiper-slide"><img src="http://del.h-cdn.co/assets/15/33/3200x2134/gallery-1439330704-gettyimages-478140221.jpg" ></div>
+         <div class="swiper-slide"><img src="https://www.healthdigest.com/img/gallery/this-is-what-happens-when-you-eat-too-much-pineapple/l-intro-1630949775.jpg" ></div>
+         <div class="swiper-slide"><img src="https://5.imimg.com/data5/HI/IU/IZ/SELLER-2668166/fresh-pineapple-500x500.jpg" ></div>
+         <div class="swiper-slide"><img src="https://www.sanlucar.com/wp-content/uploads/2016/10/SL_SH_Ananas_FIS8872-1-600x586.jpg" ></div>
+         <div class="swiper-slide"><img src="https://media.istockphoto.com/id/953010954/photo/pineapple-fruit-on-the-bush.jpg?s=612x612&w=0&k=20&c=5zuXoz67QUOENM_B5gKwGiYlTQhy1vadg_BGCAJ7_0Y=" ></div>
+         <div class="swiper-slide"><img src="https://guardian.ng/wp-content/uploads/2021/09/Pineapple-farmers.jpg" ></div>
+         <div class="swiper-slide"><img src="https://wealthresult.com/wp-content/uploads/2016/01/Pineapple-Farm.jpg" alt=""></div>
+         <div class="swiper-slide"><img src="https://www.farmingindia.in/wp-content/uploads/pineapple-farm.jpg" alt=""></div>
+         <div class="swiper-slide"><img src="https://www.agrifarming.in/wp-content/uploads/2015/03/Pineapple-Farming.jpg" alt=""></div>
+        
+        </div>
+       <!-- If we need pagination -->
+       <div class="swiper-pagination"></div>
+  
+       <!-- If we need navigation buttons -->
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next"></div>
+  
+     </div> 
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+   autoplay:{
+    delay:3000,
+    disableOnInteraction:false,
+   },
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+
+});
+    </script>
+
+
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 100%;
+        height:200vh;
+        background: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper{
+        width: 80%;
+        height: fit-content;
+    }
+    .swiper-slide img {
+        width: 100%;
+    }
+ .swiper .swiper-button-next, .swiper .swiper-button-prev{
+    color: #fff;
+ }
+ font a{text-decoration: none;color: rgb(7, 7, 7);
+    }
+    b{
+        margin-left: 50px;
+    }
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .logo{width: 100px;
+cursor: pointer;
+margin-top: 30px;}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+@media screen and (max-width:  500px) {
+    h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    p{
+      font-size: 36px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 600px){
+   /*     add css for tablet screen size     */
+}
+</style>

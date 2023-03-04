@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAGROFARM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <div id="brand"><a href="index.html">OAGRO FARM</a></div>
+            <nav>
+             <ul>
+                
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="livestock.html">LIVESTOCK</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li id="login"><a href="gallery.html">GALLERY</a></li>
+                
+             </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+               <div class="bar1"></div>
+               <div class="bar2"></div>
+               <div class="bar3"></div>
+               <ul class="mobile-menu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="livestock.html">LIVESTOCK</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li id="login"><a href="gallery.html">GALLERY</a></li>
+                
+               </ul>
+            </div>
+        </header>
+        <script src="index.js"></script>
+        
+        
+            <div class="side-bar">
+                <div class="social-links">
+                    <a href="home.html"><img src="https://www.seekpng.com/png/detail/339-3392184_home-icons-blue-home-icon-blue-png.png" alt=""></a>
+                    <a href="about.html"><img src="data:image/png;base64,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" alt=""></a>
+                    <a href="gallery.html"><img src="https://www.pngitem.com/pimgs/m/80-801532_photos-icon-png-image-iphone-photo-gallery-icon.png" alt=""></a>
+                    <a href="livestock.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRo8RCrvAlWKD6HVN3GXJFS2LOERObfLQtg&usqp=CAU" alt=""></a>
+                
+                </div>
+                <div class="useful-links">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNiWzBl10EJOYv6go_hPpAFpuTN8T0Zdo92A&usqp=CAU">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4-t3W-v1qyKPAhPLievHFq_qM9Qkjjy92DQ&usqp=CAU">
+                </div>
+            </div>
+            
+            <div class="bubbles">
+                <img src="https://chefgourmetllc.com/wp-content/uploads/2022/07/Pineapple3-scaled-e1657901276202.jpg">
+                <img src="https://api.groenkennisnet.nl/upload_mm/5/e/a/617804_fullimage_husbandry%20header%20photo.jpg">
+                <img src="https://chefgourmetllc.com/wp-content/uploads/2022/07/Pineapple3-scaled-e1657901276202.jpg">
+                <img src="https://scontent.flos5-1.fna.fbcdn.net/v/t1.15752-9/334384810_950123816148558_5210288586260651057_n.png?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_eui2=AeGBzYIfMl5UTHSwvSa3eO07xoStHKKiEDHGhK0coqIQMeDf9tYlPWOSae_sgVFTV_V4PhKF2VRCMINesABuMk0P&_nc_ohc=Hut6PQzaOB8AX94_FbU&_nc_ht=scontent.flos5-1.fna&oh=03_AdTa70bXBS67AvBxqoPiRdu5qDq1I4aVTGvIDGumAc9FVQ&oe=6425FD24">
+                <img src="https://api.groenkennisnet.nl/upload_mm/5/e/a/617804_fullimage_husbandry%20header%20photo.jpg">
+                <img src="https://chefgourmetllc.com/wp-content/uploads/2022/07/Pineapple3-scaled-e1657901276202.jpg">
+                <img src="https://api.groenkennisnet.nl/upload_mm/5/e/a/617804_fullimage_husbandry%20header%20photo.jpg">
+            </div>
+        </div>
+</body>
+</html>
+<style>
+    body{
+        width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(15, 14, 14, 0.75),rgba(10, 8, 8, 0.75)), url(https://pmimaui.com/wp-content/uploads/2018/11/mauipineapplefarms-Edited.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    }
+</style>
